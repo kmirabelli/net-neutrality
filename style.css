@@ -1,0 +1,198 @@
+* {
+  margin:0;
+/*   body: 0; */
+}
+
+#main {
+    margin-left: 240px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #136175;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #13a1c4;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+main {
+    padding: 0;
+    height:100%;
+}
+
+main > section {
+    color: #333333;
+    height:100%;
+}
+
+main > section#one {
+    height:100%;
+    background: url("https://cdn.glitch.com/538f2f6b-ca9a-4068-9950-9f1ae488e2b5%2Fbackground_1920.jpg?1556669781375");
+    background-size: cover;
+    color: #ffffff;
+    float:right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    z-index: -1;
+}
+
+#title {
+  padding: 1rem;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  width: 90%;
+}
+
+#large {
+  font-size: 90px;
+}
+
+#subtitle {
+  padding-bottom: 20px;
+  padding-left: 50px;
+  width: 90%;
+}
+
+#medium {
+  font-size: 50px;
+  padding-left: 120px;
+}
+
+.credit-1 {
+  position: absolute;
+  bottom: 10px;
+}
+
+main > section#two {
+    background-color: #fff;
+    height:100%;
+}
+
+main > section#three {
+    background-color: #fff;
+    height:100%;
+}
+
+main > section#four {
+    background-color: #fff;
+    height:100%;
+}
+
+main > section#five {
+    background-color: #fff;
+    height: 90%;
+}
+
+main > section#six {
+    background-color: #fff;
+    height: 90%;
+}
+
+main > section#seven {
+    background-color: #fff;
+    height:100%;
+}
+
+main > section#eight {
+    background-color: #fff;
+    height:100%;
+}
+
+main > section#nine {
+    height:100%;
+    background: url("https://cdn.glitch.com/538f2f6b-ca9a-4068-9950-9f1ae488e2b5%2Fbackground_1920.jpg?1556669781375");
+    background-size: cover;
+    color: #ffffff;
+    float:right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 84%;
+/*     z-index: -1; */
+}
+
+.view {
+    margin-left: 240px;
+    margin-right: 30px;
+    height: 100%;
+}
+
+h1,h2,h3 {
+  padding: 1rem;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  width: 60%;
+}
+
+p,ul,li {
+  padding-bottom: 20px;
+  padding-left: 80px;
+  width: 60%;
+}
+
+li {
+  list-style: none;
+}
+
+#cta { 
+  padding-bottom: 20px;
+  padding-left: 80px;
+  width: 60%;
+}
+
+.credit {
+  color: #fff;
+}
+  
+iframe {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: none;
+}
+
+/*
+ * Single Page App CSS Architecture
+ */
+main > section {
+    display: none;
+}
+
+main > section:last-child {
+    display: block;
+}
+
+main > section:target {
+    display: block;
+}
+
+main > section:target ~ * {
+    display: none;
+}
+
